@@ -3,6 +3,9 @@ package com.sushmitha.E_commerce.model;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.HashSet;
+import java.util.Set;
+
 @Entity
 @Data
 public class Product {
@@ -17,4 +20,5 @@ public class Product {
     @ManyToOne
     @JoinColumn(name = " category_id", nullable = false)
     private Category category;
+
 }

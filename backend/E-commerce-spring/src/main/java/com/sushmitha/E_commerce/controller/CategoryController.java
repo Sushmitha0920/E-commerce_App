@@ -1,7 +1,7 @@
 package com.sushmitha.E_commerce.controller;
 
 import com.sushmitha.E_commerce.model.Category;
-import com.sushmitha.E_commerce.repository.CategoryRepository;
+//import com.sushmitha.E_commerce.repository.CategoryRepository;
 import com.sushmitha.E_commerce.service.CategoryService;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import ProductList from "../components/ProductList";
 import CategoryFilter from "../components/CategoryFilter";
@@ -23,12 +24,11 @@ function Home() {
     setSelectedCategory(categoryId ? Number(categoryId) : null);
   };
 
+
+
   const filteredProducts = products
     .filter((product) => {
-      //const matchesCategory = selectedCategory ? product.categoryId === selectedCategory : true;
-
       const matchesCategory = selectedCategory ? product.category?.id === selectedCategory : true;
-
 
       const matchesSearch = searchTerm
         ? product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
